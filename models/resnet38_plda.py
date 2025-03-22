@@ -41,14 +41,12 @@ class Net(models.resnet38d.Net):
         self.discriminator.add_module('d_conv2', nn.Conv2d(1024, 512, 1))
         self.discriminator.add_module('d_relu2', nn.ReLU(inplace=True))
         self.discriminator.add_module('d_drop2', nn.Dropout())
-        # self.discriminator.add_module('d_conv3', nn.Conv2d(512, 2, 1))
         torch.nn.init.xavier_uniform_(self.discriminator.d_conv1.weight)
         torch.nn.init.xavier_uniform_(self.discriminator.d_conv2.weight)
 
         self.from_scratch_layers = [self.f8_3, self.f8_4, self.f9, self.fc8, \
                                     self.discriminator.d_conv1, self.discriminator.d_conv2]
 
-        # 每个类一个头
         self.head_list = []
         for c in range(20):
             head = nn.Conv2d(512, 2, 1)

@@ -26,5 +26,9 @@ The Pytorch implementation of _Pixel-Level Domain Adaptation: A New Perspective 
    Download pretrained ResNet-38 from https://drive.google.com/file/d/15F13LEL5aO45JU-j45PYjzv5KW5bn_Pn/view.
    The ResNet-101 can be downloaded from https://download.pytorch.org/models/resnet101-5d3b4d8f.pth.
 
+
  ### Train
  ``bash plda_train.sh``
+
+ ### Pre-trained Models
+ Pre-trained models can be found at [onedrive](https://connectpolyu-my.sharepoint.com/:u:/g/personal/23123041r_connect_polyu_hk/EReECi3Jm6JCnyiAs7WCJnAB_wzHmt29F9PbYtvJTc_XVA?e=OCXcCN).

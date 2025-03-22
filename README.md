@@ -1,10 +1,10 @@
-# Pixel-Level Domain Adaptation: A New Perspective for Weakly Supervised Semantic Segmentation
+## Pixel-Level Domain Adaptation: A New Perspective for Weakly Supervised Semantic Segmentation
 
-## Overview
+### Overview
 The Pytorch implementation of _Pixel-Level Domain Adaptation: A New Perspective for Weakly Supervised Semantic Segmentation._
 
 
-## Prerequisites
+### Prerequisites
 - Python 3.8
 - pytorch>=1.8.0
 - torchvision
@@ -13,7 +13,7 @@ The Pytorch implementation of _Pixel-Level Domain Adaptation: A New Perspective 
 - others (opencv-python etc.)
 
 
-## Data
+### Data
 
 1. Clone this repository.
 2. Data preparation.
@@ -26,5 +26,5 @@ The Pytorch implementation of _Pixel-Level Domain Adaptation: A New Perspective 
    Download pretrained ResNet-38 from https://drive.google.com/file/d/15F13LEL5aO45JU-j45PYjzv5KW5bn_Pn/view.
    The ResNet-101 can be downloaded from https://download.pytorch.org/models/resnet101-5d3b4d8f.pth.
 
- ## Train
+ ### Train
  ``bash plda_train.sh``

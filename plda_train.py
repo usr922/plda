@@ -87,7 +87,6 @@ def balanced_weighted_multi_adv_domain_loss(logits_, label_, s_weights_, t_weigh
         entropy_weights = entropy_weights.view(bs, -1)
         loss = entropy_weights * loss
 
-        # step 2: 平衡source/target
         source_num = torch.sum(label.view(bs, -1) == 0, dim=-1, keepdim=True)  # (bs, 1)
         target_num = torch.sum(label.view(bs, -1) == 1, dim=-1, keepdim=True)  # (bs, 1)
         num_pixels_per_class = torch.cat([source_num, target_num], dim=-1) # (bs, 2)
